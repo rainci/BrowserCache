@@ -40,8 +40,10 @@ app.get('/getData',(req,res) => {
     const data = {'name' : 'lyx', 'gender' : 'female' }
         // res.writeHead(200, {
         //     'Content-Type': 'application/json;charset=UTF-8',
-        //     'Cache-Control': 'max-age=60',
+        //     // 'Cache-Control': 'max-age=60, no-cache',
         // })
+        res.header("Content-Type", "application/json;charset=utf-8");
+        // res.header('Cache-Control','max-age=60')
         res.status(200),
         res.json(data)      
 })
