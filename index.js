@@ -1,4 +1,4 @@
-console.log('lyx i like you so much! you are my Goddess ！ peng said ')
+console.log('lyx i like you so much! you are my Goddess ！ ')
 
 const lyxXhr = ({ type, url }) => {
     return new Promise((res, rej) => {
